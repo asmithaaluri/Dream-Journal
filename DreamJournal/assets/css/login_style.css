@@ -1,0 +1,184 @@
+@font-face {
+  font-family: 'LilitaOne-Regular';
+  src: url(../fonts/LilitaOne-Regular.ttf);
+}
+
+@font-face {
+  font-family: 'GochiHand-Regular';
+  src: url(../fonts/GochiHand-Regular.ttf);   
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: 
+    url('../images/background_stars.png'),
+    url('../images/background.png');
+  background-size: cover, cover, cover;
+  background-position: center center, center center, center center;
+  background-repeat: no-repeat, repeat, repeat; 
+  font-family: 'LilitaOne-Regular';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body, h1, label, input, button {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.login_container {
+  width: 100%;
+  max-width: 350px;
+  padding: 50px;
+  border-radius: 30px;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  border: 10px solid #c3d7ff;
+}
+
+.login_container h1 {
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 400px;
+  font-size: 60px;
+  color: #ffffff;
+  -webkit-text-stroke: 23px #c3d7ff;
+  paint-order: stroke fill;
+}
+
+.login_form input {
+  font-family: 'GochiHand-Regular';
+  font-size: 18px;
+  color: #A5B6D7;
+  width: 100%;
+  max-width: 400px;
+  max-height: 100px;
+  margin-bottom: 15px;
+  padding: 20px;
+  border: 7px solid #c3d7ff;
+  border-radius: 25px;
+  outline: none;
+}
+
+.login_form input::placeholder {
+  font-family: 'GochiHand-Regular';
+  font-size: 18px;
+  color: #c3d7ff;
+}
+
+.login_form .submit_button_wrapper {
+  display: flex;
+  margin-left: 100px;
+  justify-content: center;
+  width: 50%;
+}
+
+.login_form input[type="submit"] {
+  border-radius: 20px;
+  width: 100%;
+  padding: 20px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  background-color: #c3d7ff;
+  color: #fff;
+  font-size: 25px;
+  margin-bottom: 0px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.login_form .links_wrapper {
+  display: flex;
+  justify-content: space-between; 
+  width: 100%;
+  margin-bottom: 15px; 
+  padding: 5 0 5 15px;
+}
+
+#create_account_link,
+#forgot_password_link {
+  font-family: 'GochiHand-Regular';
+  color: #c3d7ff;
+  text-decoration: none;
+  font-size: 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.login_form input[type="submit"]:hover {
+  background-color: #fff;
+  color: #A5B6D7;
+}
+
+.login_form input[type="submit"]:active {
+  background-color: #A5B6D7;
+  color: #fff;
+}
+
+#create_account_link:hover,
+#forgot_password_link:hover {
+    color: #fff;
+}
+
+.login_form input:focus {
+    border-color: #A5B6D7; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.error_message {
+    font-size: 20px;
+    text-align: center;
+    padding: 0 0 10 0;
+    color: #e9b9eb;
+    font-family: 'GochiHand-Regular'
+}
+
+.cloud_one {
+  position: absolute;
+  top: -3%;
+  left: 0px;
+  z-index: -1;
+  animation: move_cloud_left 30s linear infinite;
+}
+
+@keyframes move_cloud_left {
+  0% {
+      transform: translateX(-100vw);
+  }
+  100% {
+      transform: translateX(100vw);
+  }
+}
+
+#cloud_one {
+  width: 800px;
+  height: auto;
+}
+
+.cloud_two {
+  position: absolute;
+  top: 10%;
+  left: 0px;
+  z-index: -1;
+  animation: move_cloud_right 25s linear infinite;
+}
+
+@keyframes move_cloud_right {
+  0% {
+      transform: translateX(100vw);
+  }
+  100% {
+      transform: translateX(-100vw);
+  }
+}
+
+#cloud_two {
+  width: 900px;
+  height: auto;
+}
+

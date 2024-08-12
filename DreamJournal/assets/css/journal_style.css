@@ -1,0 +1,182 @@
+@font-face {
+    font-family: 'LilitaOne-Regular';
+    src: url(../fonts/LilitaOne-Regular.ttf);
+}
+  
+@font-face {
+    font-family: 'GochiHand-Regular';
+    src: url(../fonts/GochiHand-Regular.ttf);   
+}
+
+body, h1, label, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'LilitaOne-Regular';
+    background-image: url('../images/background_stars.png'), url('../images/background.png');
+    background-size: cover, cover;
+}
+
+h2 {
+    color: #fff;
+    font-size: 30px;
+}
+
+.greeting_rectangle {
+    background-color: #fd9ae9;
+    position: fixed;
+    /*height: 12vh;*/
+    height: 83px;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'LilitaOne-Regular';
+}
+
+#logout_icon {
+    width: 25px;
+    margin-left: 2px;
+    position: absolute;
+    top: 10px;
+    left: 11px;
+}
+
+.month_year {
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'GochiHand-Regular';
+    margin-top: 80px;
+    letter-spacing: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding-top: 150px;
+}
+
+.date_row {
+    display: flex;
+    gap: 20px;
+}
+
+.background_date_circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    text-decoration: none;
+    color: #fff;
+    background-color: #fd9ae9;
+    font-size: 16px;
+}
+
+.background_date_circle:hover {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #ffcfc6;
+}
+
+.background_date_circle:active {
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    color: #ed9585;
+}
+
+.background_date_circle span {
+    display: inline-block;
+    text-align: center;
+}
+
+#icon {
+    width: 25px;
+    height: auto;
+    margin-top: 10px;
+    padding: 0 10px;
+}
+
+.line {
+    width: 90%;
+    background-color: #fff;
+    height: 4px;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+.form_and_posts {
+    text-align: center;
+}
+
+.new_post_form {
+    margin-bottom: 20px;
+}
+
+.new_post_form h4 {
+    font-family: 'GochiHand-Regular';
+    font-size: 18px;
+    color: #f6caed;
+}
+
+input[type="submit"] {
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #fd9ae9;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 18px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'GochiHand-Regular';
+}
+
+input[type="submit"]:hover {
+    background-color: #ffcfc6;
+}
+
+.dream_posts {
+    display: flex;
+}
+
+.post_box {
+    padding: 20px;
+    border: 2px solid #fd9ae9;
+    background-color: #ffffff;
+    font-family: 'GochiHand-Regular';
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    height: 35px;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    position: relative;
+
+}
+
+.timestamp {
+    position: absolute;
+    color: #fd9ae9;
+    right: 16px;
+    bottom: 1px;
+}
+
+#icon {
+    width: 22px;
+    height: auto;
+    margin-top: 8px;
+    padding: 0px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}

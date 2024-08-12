@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'LilitaOne-Regular';
+    src: url(../fonts/LilitaOne-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'GochiHand-Regular';
+    src: url(../fonts/GochiHand-Regular.ttf);   
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: 
+      url('../images/background_stars.png'),
+      url('../images/background.png');
+    background-size: cover, cover, cover;
+    background-position: center center, center center, center center;
+    background-repeat: no-repeat, repeat, repeat; 
+    font-family: 'LilitaOne-Regular';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+body, h1, label, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'LilitaOne-Regular';
+    background-color: #A5B6D7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.register_container {
+    width: 100%;
+    max-width: 400px;
+    background-color: #f8faff;
+    padding: 25px;
+    border-radius: 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 10px solid #c3d7ff;
+}
+
+.register_container h1 {
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: 200px;
+    font-size: 40px;
+    color: #ffffff;
+    -webkit-text-stroke: 10px #c3d7ff;
+    paint-order: stroke fill;
+}
+
+.register_form input {
+    font-family: 'GochiHand-Regular';
+    font-size: 18px;
+    color: #A5B6D7;
+    width: 100%;
+    height: 20px;
+    max-width: 400px;
+    margin-bottom: 15px;
+    padding: 20px;
+    border: 7px solid #c3d7ff;
+    border-radius: 25px;
+    outline: none;
+}
+
+.register_form input::placeholder {
+    font-family: 'GochiHand-Regular';
+    font-size: 18px;
+    color: #c3d7ff;
+}
+
+.register_form .submit_button_wrapper {
+    display: flex;
+    margin-left: 100px;
+    height: 30px;
+    justify-content: center;
+    width: 50%;
+}
+
+.register_form input[type="submit"] {
+    border-radius: 20px;
+    width: 100%;
+    padding: 15 5 35 5px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    background-color: #c3d7ff;
+    color: #fff;
+    font-size: 25px;
+    margin-bottom: 0px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.register_form .link_wrapper {
+    display: flex;
+    justify-content: center; 
+    width: 100%;
+    margin-bottom: 15px; 
+    padding: 10 0 0 0px;
+}
+
+#login_link {
+    font-family: 'GochiHand-Regular';
+    color: #c3d7ff;
+    text-decoration: none;
+    font-size: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#login_link:hover {
+    color: #fff;
+}
+
+.register_form input[type="submit"]:hover {
+    background-color: #fff;
+    color: #A5B6D7;
+}
+
+.register_form input[type="submit"]:active {
+    background-color: #A5B6D7;
+    color: #fff;
+}
+
+.register_form input:focus {
+    border-color: #A5B6D7; 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.error_message {
+    font-size: 20px;
+    text-align: center;
+    padding: 0 0 10 0;
+    color: #e9b9eb;
+    font-family: 'GochiHand-Regular'
+}
+
+.error_message.success_message {
+    margin-top: 50px;
+    padding: 0px;
+    margin-bottom: -40px;
+}
+
+#success_link {
+    color: #f4def5;
+    text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease; 
+}
+
+#success_link:hover {
+    color: #ffffff;
+}
+
+#success_link:active {
+    color: #f4def5;
+}

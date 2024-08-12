@@ -1,0 +1,102 @@
+@font-face {
+    font-family: 'LilitaOne-Regular';
+    src: url(../fonts/LilitaOne-Regular.ttf);
+}
+  
+@font-face {
+    font-family: 'GochiHand-Regular';
+    src: url(../fonts/GochiHand-Regular.ttf);   
+}
+
+body, h1, label, input, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #ca6fb8;
+}
+
+body {
+    font-family: 'LilitaOne-Regular';
+    background-image: url('../images/background_stars.png'), url('../images/background.png');
+    background-size: cover, cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0; 
+}
+
+.log_dream_form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffd2d2;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+textarea {
+    width: 100%;
+    max-width: 600px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid #fd9ae9;
+    font-size: 20px;
+    resize: none;
+    overflow: auto;
+    box-sizing: border-box;
+    background-color: #fff;
+    font-family: 'GochiHand-Regular';
+    color: #fd9ae9;
+}
+
+textarea:focus {
+    outline: none; 
+    border: 2px solid #ff69b4;
+}
+
+textarea::-webkit-input-placeholder { /* Chrome, Safari, and Opera */
+    color: #b07b7b;
+}
+textarea::-moz-placeholder { /* Firefox 19+ */
+    color: #b07b7b;
+}
+textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #b07b7b;
+}
+textarea:-moz-placeholder { /* Firefox 18- */
+    color: #b07b7b;
+}
+
+input[type="submit"] {
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: #fd9ae9;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 18px;
+    margin-top: 10px; 
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-family: 'GochiHand-Regular'; 
+}
+
+input[type="submit"]:hover {
+    background-color: #fff; 
+    color: #fd9ae9; 
+    border: 2px solid #fd9ae9;
+}
+
+#icon {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 25px;
+    height: auto;
+}
+
+.error_messages {
+    font-family: 'GochiHand-Regular'; 
+    font-size: 20px;
+}
